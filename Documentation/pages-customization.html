@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Minton React - Responsive Bootstrap 5 and React Admin Dashboard</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="duik-header">
+        <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+            <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="index.html">
+                <span>
+                    <img src="./assets/img/logo-light.png" alt="" height="20">
+                </span>
+            </a>
+
+            <!-- Responsive Toggle Button -->
+            <div class="d-flex d-md-none">
+                <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav"
+                    aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-light" viewbox="0 0 30 30" width="30"
+                        height="30" focusable="false">
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                            d="M4 7h22M4 15h22M4 23h22" />
+                    </svg>
+                </button>
+            </div>
+            <!-- End Responsive Toggle Button -->
+
+            <div class="ms-auto mr-3">
+                <span class="badge badge-light">v1.0</span>
+            </div>
+
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+
+                <!-- Sidebar Nav -->
+                <div class="collapse navbar-collapse" id="sidebar-nav">
+                    <div class="js-scrollbar duik-sidebar-sticky">
+                        <h5 class="duik-sidebar__heading">Getting Started</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item">
+                                <a class="duik-sidebar__link" href="./index.html"> Introduction </a>
+                            </li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-installation.html">Getting
+                                    Started</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-strcuture.html">File
+                                    Structure</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-routing.html">Routing</a>
+                            </li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-spliting.html">Code
+                                    Spliting</a></li>
+                        </ul>
+
+                        <h5 class="duik-sidebar__heading">Customization</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link active"
+                                    href="./pages-customization.html">Layouts</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-themes.html">Themes
+                                    & Others</a></li>
+                        </ul>
+
+                        <h5 class="duik-sidebar__heading">Other</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item">
+                                <a class="duik-sidebar__link" href="./pages-changelog.html">Change log</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Sidebar Nav -->
+            </nav>
+            <!-- End Sidebar -->
+
+            <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+                <div class="row">
+                    <!-- Content Nav -->
+                    <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+                        <ul class="js-scroll-nav duik-content-nav">
+                            <li class="duik-content-nav__item"><a href="#doc-about">Customization</a></li>
+                            <li class="duik-content-nav__item"><a href="#change-layout">Change Layout</a></li>
+                            <li class="duik-content-nav__item"><a href="#change-layoutwidth">Change Layout Width</a>
+                            </li>
+                            <li class="duik-content-nav__item"><a href="#change-sidebartheme">Change Sidebar Theme</a>
+                            </li>
+                            <li class="duik-content-nav__item"><a href="#change-topbartheme">Change Topbar Theme</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Content Nav -->
+
+                    <!-- Content -->
+                    <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+                        <div class="p-lg-1">
+                            <h2 class="h3">Customization</h2>
+                            <p>Minton is highly customizable and provides an easy way to change the layouts,
+                                color themes etc. Minton comes with different layout choices, including vertical,
+                                horizontal, detached side menu, two column menu, etc. The layout and left sidebar
+                                related
+                                customization can be done by simply changing the value of a few state variables.
+                                Everything is being controlled through Redux. Please refer to below described
+                                details in order to see what are the possible customization or changes.</p>
+                            <p>You can customize the look and feel of various elements, including navbar,
+                                topbar, form elements etc by simply editing Sass files in
+                                <code>/src/assets/scss</code> directory or removing unneeded components from
+                                <code>app.scss</code> source files.
+                            </p>
+                        </div>
+                        <div class="p-lg-1 mt-1" id="change-layout">
+                            <h5 class="mt-0 mb-2">1. How to change the default layout from
+                                vertical to another?</h5>
+                            <p>Open <code>src/redux/layout/reducer.ts</code> file, and search for declaration of
+                                <code>INIT_STATE</code>. Here as a default <code>layoutType</code> property, you
+                                can either specify <code>LayoutTypes.LAYOUT_HORIZONTAL</code> or
+                                <code>LayoutTypes.LAYOUT_DETACHED</code> or
+                                <code>LayoutTypes.LAYOUT_TWO_COLUMN</code>. The respective layout would get
+                                activated and being displayed as a default to user.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <div class="img-thumbnail p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6"><img src="./assets/img/layout-1.png"
+                                                    alt="Minton Default" class="img-fluid shadow-sm" height="50"></div>
+                                            <div class="col-sm-6">
+                                                <h6 class="font-weight-bold">Minton Default - Vertical Layout
+                                                </h6>
+                                                <p>This is already set as a default. You don't need to
+                                                    do anything.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="img-thumbnail p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6"><img src="./assets/img/layout-2.png"
+                                                    alt="Minton Default" class="img-fluid shadow-sm"></div>
+                                            <div class="col-sm-6">
+                                                <h6 class="font-weight-bold">Horizontal Layout</h6>
+                                                <p>Specify default state parameter <code>INIT_STATE</code>'s
+                                                    <code>layoutType</code> property with
+                                                    <code>LayoutTypes.LAYOUT_HORIZONTAL</code>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="img-thumbnail p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6"><img src="./assets/img/layout-3.png"
+                                                    alt="Minton Default" class="img-fluid shadow-sm"></div>
+                                            <div class="col-sm-6">
+                                                <h6 class="font-weight-bold">Detached Sidebar Layout</h6>
+                                                <p>Specify default state parameter <code>INIT_STATE</code>'s
+                                                    <code>layoutType</code> property with
+                                                    <code>LayoutTypes.LAYOUT_DETACHED</code>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <div class="img-thumbnail p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6"><img src="./assets/img/layout-4.png"
+                                                    alt="Minton Default" class="img-fluid shadow-sm">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <h6 class="font-weight-bold">Two Column Sidebar Layout</h6>
+                                                <p>Specify default state parameter <code>INIT_STATE</code>'s
+                                                    <code>layoutType</code> property with
+                                                    <code>LayoutTypes.LAYOUT_TWO_COLUMN</code>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-lg-1 mt-4" id="change-layoutwidth">
+                            <h5 class="mt-0 mb-2">2. How to enable boxed mode?</h5>
+                            <p>Open <code>src/redux/layout/reducer.ts</code> file, and search for declaration of
+                                <code>INIT_STATE</code>. Here as a default <code>layoutWidth</code> property,
+                                specify <code>LayoutWidth.LAYOUT_WIDTH_BOXED</code> in order to enable boxed
+                                mode.
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="img-thumbnail p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6"><img src="./assets/img/layout-5.png"
+                                                    alt="Minton Default" class="img-fluid shadow-sm"></div>
+                                            <div class="col-sm-6">
+                                                <h6 class="font-weight-bold">Boxed Vertical Layout</h6>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="img-thumbnail p-3">
+                                        <div class="row">
+                                            <div class="col-sm-6"><img src="./assets/img/layout-6.png"
+                                                    alt="Minton Default" class="img-fluid shadow-sm"></div>
+                                            <div class="col-sm-6">
+                                                <h6 class="font-weight-bold">Boxed Horizontal Layout</h6>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-lg-1 mt-4" id="change-sidebartheme">
+                            <h5 class="mt-0 mb-2">3. How to change the left sidebar theme?</h5>
+                            <p>The left side bar (mainly available in Vertical, Detached and Two Column Menu layouts)
+                                can be
+                                changed very easily as well. There are four possible choices of styles:
+                                <br>a. Light - the sidebar with light background
+                                <br>b. Dark - the sidebar with dark background
+                                <br>c. Brand - the sidebar with blue background
+                                <br>d. Gradient - the sidebar with gradient background
+                            </p>
+                            <p>Open <code>src/redux/layout/reducer.ts</code> file, and search for declaration of
+                                <code>INIT_STATE</code>. Here as a default <code>leftSideBarTheme</code>
+                                property, specify <code>SideBarTheme.LEFT_SIDEBAR_THEME_LIGHT</code> or
+                                <code>SideBarTheme.LEFT_SIDEBAR_THEME_DARK</code> or
+                                <code>SideBarTheme.LEFT_SIDEBAR_THEME_BRAND</code> or
+                                <code>SideBarTheme.LEFT_SIDEBAR_THEME_GRADIENT</code>in order to activate
+                                respective sidebar theme.
+                            </p>
+                        </div>
+                        <div class="p-lg-1 mt-4" id="change-topbartheme">
+                            <h5 class="mt-0 mb-2">4. How to change the topbar theme?</h5>
+                            <p>The top bar can be changed very easily too. There are two possible choices of
+                                styles:
+                                <br>a. Light - the topbar with light background
+                                <br>b. Dark - the topbar with dark background
+                            </p>
+                            <p>Open <code>src/redux/layout/reducer.ts</code> file, and search for declaration of
+                                <code>INIT_STATE</code>. Here as a default <code>topbarTheme</code>
+                                property, specify <code>TopbarTheme.TOPBAR_THEME_LIGHT</code> or
+                                <code>TopbarTheme.TOPBAR_THEME_DARK</code> in order to activate
+                                respective sidebar theme.
+                            </p>
+                        </div>
+
+                        <div class="p-lg-1">
+                            <div class="alert alert-primary-lighter text-black-50 font-size-sm">
+                                For other types of customization including creating your own color pallete,
+                                changing look and feel of the particular UI element, etc, please refer to the
+                                documentation <a href="https://coderthemes.com/minton/docs/" target="_blank">here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+
+                <!-- Footer -->
+                <footer class="small py-4">
+                    <div class="row">
+                        <!-- Copyright -->
+                        <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+                            <script>document.write(new Date().getFullYear())</script> &copy; Minton theme by <a
+                                href="">Coderthemes</a>
+                        </div>
+                        <!-- End Copyright -->
+
+                        <!-- Social Icons -->
+                        <div class="col-md-6 col-xl-4 align-self-center">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://coderthemes.com/" target="_blank" class="text-dark mx-2">About Us</a>
+                                <a href="https://coderthemes.com/#contact" target="_blank"
+                                    class="text-dark mx-2">Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- End Social Icons -->
+                    </div>
+                </footer>
+                <!-- End Footer -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Go to Top -->
+    <a class="js-go-to duik-go-to" href="javascript:;">
+        <span class="fa fa-arrow-up duik-go-to__inner"></span>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="assets/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/autocomplete.js"></script>
+    <script src="assets/js/custom-scrollbar.js"></script>
+</body>
+
+</html>

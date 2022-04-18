@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Minton React - Responsive Bootstrap 5 and React Admin Dashboard</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="duik-header">
+        <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+            <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="index.html">
+                <span>
+                    <img src="./assets/img/logo-light.png" alt="" height="20">
+                </span>
+            </a>
+
+            <!-- Responsive Toggle Button -->
+            <div class="d-flex d-md-none">
+                <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav"
+                    aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-light" viewbox="0 0 30 30" width="30"
+                        height="30" focusable="false">
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                            d="M4 7h22M4 15h22M4 23h22" />
+                    </svg>
+                </button>
+            </div>
+            <!-- End Responsive Toggle Button -->
+
+            <div class="ms-auto mr-3">
+                <span class="badge badge-light">v1.0</span>
+            </div>
+
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+
+                <!-- Sidebar Nav -->
+                <div class="collapse navbar-collapse" id="sidebar-nav">
+                    <div class="js-scrollbar duik-sidebar-sticky">
+                        <h5 class="duik-sidebar__heading">Getting Started</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item">
+                                <a class="duik-sidebar__link" href="./index.html"> Introduction </a>
+                            </li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-installation.html">Getting
+                                    Started</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-strcuture.html">File
+                                    Structure</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link active"
+                                    href="./pages-routing.html">Routing</a>
+                            </li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-spliting.html">Code
+                                    Spliting</a></li>
+                        </ul>
+
+                        <h5 class="duik-sidebar__heading">Customization</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-customization.html">Layouts</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-themes.html">Themes
+                                    & Others</a></li>
+                        </ul>
+
+                        <h5 class="duik-sidebar__heading">Other</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item">
+                                <a class="duik-sidebar__link" href="./pages-changelog.html">Change log</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Sidebar Nav -->
+            </nav>
+            <!-- End Sidebar -->
+
+            <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+                <div>
+
+                    <!-- Content -->
+                    <div class="duik-content border-bottom">
+                        <div class="p-lg-3">
+                            <h2 class="h3">Routing</h2>
+                            <p>Minton React is having routing setup based on <a
+                                    href="https://reacttraining.com/react-router/" target="_blank">React-Router</a>.</p>
+                            <p>You can easily add, change or remove any route by simply making changes described
+                                below:</p>
+                        </div>
+                        <div class="p-lg-1">
+                            <ol>
+                                <li>Open <code>src/routes/index.tsx</code> file, declare your component. E.g.<p>
+                                        <code>const Dashboard2 = React.lazy(() => import('./views/dashboards/Dashboard2'));</code>.
+                                    </p>
+                                </li>
+                                <li>And make sure to add the entry for same with <code>path</code> and other
+                                    properties like <code>name</code>, <code>component</code>,
+                                    <code>route</code>, and <code>roles</code> in constants <code>routes</code>
+                                    declared there. E.g.<p></p>
+                                    <p><code>{ path: '/dashboard2', name: 'Dashboard2', component: Dashboard2, route: PrivateRoute, roles: ['Admin'] },</code>
+                                    </p>
+                                    <p>Each of these properties are explained below:</p>
+                                    <ul>
+                                        <li><strong>path</strong> - Url relative path</li>
+                                        <li><strong>name</strong> - Name of your route</li>
+                                        <li><strong>component</strong> - Actual component name which would get
+                                            rendered when user visits the path</li>
+                                        <li><strong>route</strong> - An actual route component which would get
+                                            used. This helps to restrict the non authenticated and unauthorized
+                                            users to access this path. There are two choices here:
+                                            <code>PrivateRoute</code> and <code>Route</code> from
+                                            <code>react-router-dom</code> package.<p>If you specify
+                                                <code>PrivateRoute</code>, the application would check if the
+                                                user is already authenticated or not and also validate if the
+                                                user is having required role assigned to it, in order to access
+                                                the specified path. In order to specify which roles are allowed,
+                                                you can specify them using <strong>roles</strong> property.
+                                            </p>
+                                            <p>If you specify <code>Route</code>, the application would not
+                                                restrict user. Any user would be able to access the specified
+                                                path.</p>
+                                        </li>
+                                        <li><code>roles</code> - The roles which are allowed to access this
+                                            specified path</li>
+                                    </ul>
+                                    <p></p>
+                                </li>
+                            </ol>
+                            <div class="alert alert-primary-lighter text-black-50 mt-4" role="alert">Note that
+                                you don't need
+                                to restart
+                                the development server in order to see the menu changes getting in
+                                effect</div>
+                        </div>
+                        <div class="p-lg-3">
+                            <p>Optionally, you might want to add the menu entry in respective layout menu
+                                component.</p>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+
+                <!-- Footer -->
+                <footer class="small py-4">
+                    <div class="row">
+                        <!-- Copyright -->
+                        <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+                            <script>document.write(new Date().getFullYear())</script> &copy; Minton theme by <a
+                                href="">Coderthemes</a>
+                        </div>
+                        <!-- End Copyright -->
+
+                        <!-- Social Icons -->
+                        <div class="col-md-6 col-xl-4 align-self-center">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://coderthemes.com/" target="_blank" class="text-dark mx-2">About Us</a>
+                                <a href="https://coderthemes.com/#contact" target="_blank"
+                                    class="text-dark mx-2">Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- End Social Icons -->
+                    </div>
+                </footer>
+                <!-- End Footer -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Go to Top -->
+    <a class="js-go-to duik-go-to" href="javascript:;">
+        <span class="fa fa-arrow-up duik-go-to__inner"></span>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="assets/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/autocomplete.js"></script>
+    <script src="assets/js/custom-scrollbar.js"></script>
+</body>
+
+</html>

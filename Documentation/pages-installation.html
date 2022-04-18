@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>Minton React - Responsive Bootstrap 5 and React Admin Dashboard</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/vendor/prism/prism.css">
+
+    <!-- CSS Template -->
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+</head>
+
+<body class="bg-white">
+    <!-- Header -->
+    <header class="duik-header">
+        <nav class="navbar navbar-dark fixed-top bg-primary flex-nowrap p-0">
+            <a class="navbar-brand bg-md-primary-darker col-md-3 col-xl-2 mr-0 py-3" href="index.html">
+                <span>
+                    <img src="./assets/img/logo-light.png" alt="" height="20">
+                </span>
+            </a>
+
+            <!-- Responsive Toggle Button -->
+            <div class="d-flex d-md-none">
+                <button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#sidebar-nav"
+                    aria-controls="sidebar-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-light" viewbox="0 0 30 30" width="30"
+                        height="30" focusable="false">
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+                            d="M4 7h22M4 15h22M4 23h22" />
+                    </svg>
+                </button>
+            </div>
+            <!-- End Responsive Toggle Button -->
+
+            <div class="ms-auto mr-3">
+                <span class="badge badge-light">v1.0</span>
+            </div>
+
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-xl-2 bg-light duik-sidebar navbar-expand-md">
+
+                <!-- Sidebar Nav -->
+                <div class="collapse navbar-collapse" id="sidebar-nav">
+                    <div class="js-scrollbar duik-sidebar-sticky">
+                        <h5 class="duik-sidebar__heading">Getting Started</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item">
+                                <a class="duik-sidebar__link" href="./index.html"> Introduction </a>
+                            </li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link active"
+                                    href="./pages-installation.html">Getting
+                                    Started</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-strcuture.html">File
+                                    Structure</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-routing.html">Routing</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-spliting.html">Code
+                                    Spliting</a></li>
+                        </ul>
+
+                        <h5 class="duik-sidebar__heading">Customization</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-customization.html">Layouts</a></li>
+                            <li class="duik-sidebar__item"><a class="duik-sidebar__link"
+                                    href="./pages-themes.html">Themes
+                                    & Others</a></li>
+                        </ul>
+
+                        <h5 class="duik-sidebar__heading">Other</h5>
+                        <ul class="duik-sidebar__nav">
+                            <li class="duik-sidebar__item">
+                                <a class="duik-sidebar__link" href="./pages-changelog.html">Change log</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Sidebar Nav -->
+            </nav>
+            <!-- End Sidebar -->
+
+            <main class="ml-md-auto col-md-9 col-xl-10 px-4 pt-0 pt-md-11">
+                <div class="row">
+                    <!-- Content Nav -->
+                    <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+                        <ul class="js-scroll-nav duik-content-nav">
+                            <li class="duik-content-nav__item"><a href="#getting-started">Getting Started</a></li>
+                            <li class="duik-content-nav__item"><a href="#prerequisites">Prerequisites</a></li>
+                            <li class="duik-content-nav__item"><a href="#installation">Installation</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Content Nav -->
+
+                    <!-- Content -->
+                    <div class="col-xl-10 order-xl-1 duik-content border-bottom">
+                        <div class="p-lg-3">
+                            <h2 class="h3" id="getting-started">Getting Started</h2>
+                            <p>Minton React is created using <a href="https://github.com/facebook/create-react-app"
+                                    target="_blank">Create
+                                    React App (CLI)</a>.</p>
+                            <p>In case if you don't know - Create React App is a tool built by Facebook to help
+                                developers build react applications with simply just one command. It set up and
+                                configures everything automatically and so you don't need to configure anything
+                                manually (e.g. No need to install and configure tools like webpack or babel).
+                                they are preconfigured by creating react app.</p>
+                            <h5 class="mt-4" id="prerequisites">Prerequisites</h5>
+                            <p>Please follow the below steps to install and setup all prerequisites:</p>
+                            <ul>
+                                <li><strong>Nodejs</strong>
+                                    <p>Make sure to have the <a href="https://nodejs.org/" target="_blank">Node.js</a>
+                                        installed &amp; running
+                                        in your
+                                        computer. If you already have installed nodejs on your computer, you can
+                                        skip this step</p>
+                                </li>
+                                <li><strong>Yarn</strong>
+                                    <p>Make sure to have the <a href="https://yarnpkg.com/lang/en/"
+                                            target="_blank">Yarn</a> installed &amp;
+                                        running in your computer.
+                                        If you already have installed yarn on your computer, you can skip this
+                                        step</p>
+                                </li>
+                                <li><strong>Git</strong>
+                                    <p>Make sure to have the <a href="https://git-scm.com/" target="_blank">Git</a>
+                                        installed &amp; running in
+                                        your computer. If
+                                        you already have installed git on your computer, you can skip this step
+                                    </p>
+                                </li>
+                            </ul>
+                            <h5 class="mt-4" id="installation">Installation</h5>
+                            <p>To setup Minton React, follow the below-mentioned steps:</p>
+                            <ul>
+                                <li><strong>Install Prerequisites</strong>
+                                    <p>Make sure to have all the above prerequisites installed &amp; running on
+                                        your computer</p>
+                                </li>
+                                <li><strong>Install Dependencies</strong>
+                                    <p>Open your terminal, go to your folder and enter the command
+                                        <code>yarn</code>. This would install all required dependencies
+                                        in <code>node_modules</code> folder. And now, you are ready to run the
+                                        Minton React for the first time.
+                                    </p>
+                                </li>
+                            </ul>
+                            <p class="mt-4">After you finished with above steps, you can run the following
+                                commands to run project locally or build for production use:</p>
+                            <table class="table table-bordered m-0">
+                                <thead>
+                                    <tr>
+                                        <th style="width:20%">Command</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>yarn start</code></td>
+                                        <td>Runs the project locally, starts the development server and watches
+                                            for any changes in your code, including your components, sass, etc.
+                                            The development server is accessible at <a
+                                                href="http://localhost:3000">http://localhost:3000</a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>yarn build</code></td>
+                                        <td>It will create a build folder inside your folder. It bundles React
+                                            with production mode and optimizes the build for the best
+                                            performance. The build is minified and the filenames include the
+                                            hashes. Your app is now ready to be deployed.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End Content -->
+                </div>
+
+                <!-- Footer -->
+                <footer class="small py-4">
+                    <div class="row">
+                        <!-- Copyright -->
+                        <div class="col-md-6 text-center text-dark text-md-left mb-3 mb-md-0">
+                            <script>document.write(new Date().getFullYear())</script> &copy; Minton theme by <a
+                                href="">Coderthemes</a>
+                        </div>
+                        <!-- End Copyright -->
+
+                        <!-- Social Icons -->
+                        <div class="col-md-6 col-xl-4 align-self-center">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://coderthemes.com/" target="_blank" class="text-dark mx-2">About Us</a>
+                                <a href="https://coderthemes.com/#contact" target="_blank"
+                                    class="text-dark mx-2">Contact Us</a>
+                            </div>
+                        </div>
+                        <!-- End Social Icons -->
+                    </div>
+                </footer>
+                <!-- End Footer -->
+            </main>
+        </div>
+    </div>
+
+    <!-- Go to Top -->
+    <a class="js-go-to duik-go-to" href="javascript:;">
+        <span class="fa fa-arrow-up duik-go-to__inner"></span>
+    </a>
+    <!-- End Go to Top -->
+
+    <!-- JS Global Compulsory -->
+    <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+    <script src="assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+    <script src="assets/vendor/prism/prism.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/autocomplete.js"></script>
+    <script src="assets/js/custom-scrollbar.js"></script>
+</body>
+
+</html>
